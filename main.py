@@ -133,19 +133,19 @@ def IniciarJogo():
 
     BotaoJogar.destroy()
 
-    Pedra=Image.open("imagens/Pedra.png")
+    Pedra=Image.open("/home/lassicc/Documentos/My_Projects/Rock_Scissors_Paper/Pedra.png")
     Pedra=Pedra.resize((50,50),Image.ANTIALIAS)
     Pedra=ImageTk.PhotoImage(Pedra)
     BotaoPedra=Button(frameBaixo,command=lambda:jogar('Pedra'),width=50,image=Pedra,bg=c2,highlightbackground=c2,activebackground=c1,border=0)
     BotaoPedra.place(x=10,y=60)
 
-    Papel=Image.open("imagens/Papel.png")
+    Papel=Image.open("/home/lassicc/Documentos/My_Projects/Rock_Scissors_Paper/Papel.png")
     Papel=Papel.resize((50,50),Image.ANTIALIAS)
     Papel=ImageTk.PhotoImage(Papel)
     BotaoPapel=Button(frameBaixo,command=lambda:jogar('Papel'),width=50,image=Papel,bg=c2,highlightbackground=c2,activebackground=c1,border=0)
     BotaoPapel.place(x=100,y=60)
 
-    Tesoura=Image.open("imagens/Tesoura.png")
+    Tesoura=Image.open("/home/lassicc/Documentos/My_Projects/Rock_Scissors_Paper/Tesoura.png")
     Tesoura=Tesoura.resize((50,50),Image.ANTIALIAS)
     Tesoura=ImageTk.PhotoImage(Tesoura)
     BotaoTesoura=Button(frameBaixo,command=lambda:jogar('Tesoura'),width=50,image=Tesoura,bg=c2,highlightbackground=c2,activebackground=c1,border=0)
